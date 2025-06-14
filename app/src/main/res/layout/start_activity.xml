@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="@dimen/_24sdp"
+    android:background="@color/mehroon">
+
+    <!-- App Logo -->
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:src="@drawable/logo"
+        android:contentDescription="App Logo" />
+
+    <!-- Description -->
+    <TextView
+        android:id="@+id/appDescription"
+        android:layout_marginTop="@dimen/_24sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to\n Bhook Buster 🌈"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_22ssp"
+        android:textAlignment="center" />
+
+    <!-- Get Started Button -->
+    <Button
+        android:id="@+id/btnGetStarted"
+        android:layout_marginTop="@dimen/_130sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Started"
+        android:textSize="@dimen/_14ssp"
+        android:backgroundTint="@color/yellow"
+        android:textColor="@android:color/white"
+        android:paddingStart="@dimen/_24sdp"
+        android:paddingEnd="@dimen/_24sdp"
+        android:layout_marginBottom="@dimen/_24sdp" />
+
+</LinearLayout>
