@@ -10,7 +10,7 @@ import me.ibrahimsn.lib.CirclesLoadingView
 
 class SplashActivity : AppCompatActivity() {
 
-    private val SPLASH_DELAY: Long = 5000  // 5 seconds
+    private val SPLASH_DELAY: Long = 2000  // 5 seconds
     private lateinit var loadingView: CirclesLoadingView
 
     override fun onCreate(savedInstanceState: Bundle?) {

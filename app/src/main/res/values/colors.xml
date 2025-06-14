@@ -4,4 +4,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="mehroon">#560000</color>
     <color name="yellow">#f9cb05</color>
+    <color name="gray">#A9A9A9</color>
+
 </resources>

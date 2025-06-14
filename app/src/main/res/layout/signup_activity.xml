@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Email"
-            android:textColorHint="@color/black"
+            android:textColorHint="@color/gray"
             android:textColor="@color/black"
             android:inputType="textEmailAddress"
             android:padding="@dimen/_12sdp"
@@ -53,7 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Username"
-            android:textColorHint="@color/black"
+            android:textColorHint="@color/gray"
             android:textColor="@color/black"
             android:inputType="textEmailAddress"
             android:padding="@dimen/_12sdp"
@@ -64,29 +64,46 @@
         <EditText
             android:id="@+id/editTextPassword"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_57sdp"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/_8sdp"
             android:background="@android:drawable/edit_text"
             android:hint="Password"
+            android:textColorHint="@color/gray"
             android:inputType="textPassword"
             android:padding="@dimen/_12sdp"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black" />
-
+            android:textColor="@color/black"/>
         <!-- Confirm Password -->
-        <EditText
-            android:id="@+id/editTextConfirmPassword"
+        <!-- Confirm Password Field with Eye Icon -->
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_57sdp"
-            android:layout_marginBottom="@dimen/_8sdp"
-            android:background="@android:drawable/edit_text"
-            android:hint="Confirm Password"
-            android:inputType="textPassword"
-            android:padding="@dimen/_12sdp"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black" />
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8sdp">
+
+            <EditText
+                android:id="@+id/editTextConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/edit_text"
+                android:hint="Confirm Password"
+                android:textColorHint="@color/gray"
+                android:inputType="textPassword"
+                android:padding="@dimen/_12sdp"
+                android:paddingEnd="48dp"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/eyeIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_eye_closed"
+                android:contentDescription="Toggle Password Visibility" />
+        </RelativeLayout>
 
         <TextView
+            android:id="@+id/textSignIn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Already have an account? Sign in"
@@ -103,8 +120,7 @@
             android:text="Sign Up"
             android:backgroundTint="@color/yellow"
             android:textColor="@color/white"
-            android:padding="@dimen/_12sdp"
-            android:layout_marginTop="@dimen/_8sdp" />
+            android:padding="@dimen/_12sdp" />
 
 
     </LinearLayout>
