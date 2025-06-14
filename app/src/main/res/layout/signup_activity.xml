@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:fillViewport="true"
+    android:background="@color/mehroon"
+    tools:context=".SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:gravity="center_horizontal">
+
+
+        <!-- App Logo -->
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:background="@color/mehroon"
+            android:contentDescription="App Logo"
+            android:src="@drawable/app_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/_20sdp"
+            android:text="CreateYour Account"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp" />
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/_12sdp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Username -->
+        <EditText
+            android:id="@+id/editTextUsernmae"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/_12sdp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_57sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:background="@android:drawable/edit_text"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <!-- Confirm Password -->
+        <EditText
+            android:id="@+id/editTextConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_57sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:background="@android:drawable/edit_text"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:padding="@dimen/_12sdp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Sign in"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12ssp"
+            android:padding="@dimen/_12sdp" />
+
+        <!-- Sign Up Button -->
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:backgroundTint="@color/yellow"
+            android:textColor="@color/white"
+            android:padding="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_8sdp" />
+
+
+    </LinearLayout>
+</ScrollView>
