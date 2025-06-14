@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- button_gradient.xml -->
+<gradient xmlns:android="http://schemas.android.com/apk/res/android"
+    android:startColor="#E60050"
+    android:endColor="#FF0000"
+    android:angle="0"
+    android:type="linear" />
