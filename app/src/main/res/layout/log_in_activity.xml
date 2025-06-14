@@ -50,16 +50,31 @@
             android:padding="@dimen/_12sdp"
             android:background="#F5F5F5" />
 
-        <!-- Password -->
-        <EditText
-            android:id="@+id/passwordEditText"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:padding="@dimen/_12sdp"
-            android:background="#F5F5F5" />
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="@dimen/_12sdp"
+                android:background="#F5F5F5"
+                android:paddingEnd="48dp" />
+
+            <ImageView
+                android:id="@+id/eyeIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_eye_closed"
+                android:contentDescription="Toggle Password Visibility" />
+        </RelativeLayout>
 
         <!-- Forget Password -->
         <TextView

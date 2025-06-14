@@ -16,6 +16,7 @@
         android:contentDescription="App Logo" />
 
     <me.ibrahimsn.lib.CirclesLoadingView
+        android:id="@+id/loadingView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:circleRadius="@dimen/_8sdp"

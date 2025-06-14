@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     android:padding="24dp"
     android:fillViewport="true"
-    android:background="@color/mehroon"
-    tools:context=".SignUpActivity">
+    android:background="@color/mehroon">
 
     <LinearLayout
         android:layout_width="match_parent"
