@@ -1,19 +1,204 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/white">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!-- Location and Profile -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="space-between|center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📍Freedom way, Lekki phase"
+                android:textSize="14sp"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/user_profile"
+                android:background="@drawable/circle_bg"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+        <!-- Search Box -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:hint="Search"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:background="@drawable/search_box_bg"
+            android:padding="10dp" />
+
+        <!-- Banner -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/special_offer_banner"
+            android:scaleType="centerCrop"
+            android:background="@drawable/rounded_bg_red" />
+
+        <!-- Categories -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="🍔 Burger"
+                android:backgroundTint="@color/pink"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="🍕 Pizza"
+                android:backgroundTint="@android:color/white"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="🌭 Sandwich"
+                android:backgroundTint="@android:color/white"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <!-- Products Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <!-- Product Card 1 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/product_card_bg"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginEnd="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⭐ 3.8"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:src="@drawable/burger_chicken"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chicken Burger"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginTop="6dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100 gr chicken + tomato + cheese + Lettuce"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/darker_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="space-between|center_vertical"
+                    android:layout_marginTop="8dp">
+
+                    <TextView
+                        android:text="$20.00"
+                        android:textColor="@color/pink"
+                        android:textStyle="bold" />
+
+                    <ImageButton
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:backgroundTint="@color/pink"
+                        android:src="@android:drawable/ic_input_add"
+                        android:background="@drawable/circle_bg"
+                        android:tint="@android:color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Product Card 2 - similar layout -->
+            <!-- Repeat with Cheeseburger etc... -->
+        </LinearLayout>
+
+        <!-- Popular Meals -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Popular Meal Menu"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/popular_item_bg"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="space-between|center_vertical">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/pizza"
+                android:scaleType="centerCrop"
+                android:layout_marginEnd="10dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="Pepper Pizza"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:text="5kg box of Pizza"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:text="$15"
+                android:textStyle="bold"
+                android:textColor="@color/pink" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

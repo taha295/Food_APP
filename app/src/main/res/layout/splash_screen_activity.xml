@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/mehroon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_marginTop="250dp"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_250sdp"
+        android:src="@drawable/logo"
+        android:contentDescription="App Logo" />
+
+    <me.ibrahimsn.lib.CirclesLoadingView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:circleRadius="@dimen/_8sdp"
+        app:circleMargin="@dimen/_8sdp"
+        app:animDistance="@dimen/_10sdp"
+        app:animDuration="500"
+        app:animDelay="150"
+        app:animInterpolator="accelerateDecelerate"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</LinearLayout>
